@@ -10,7 +10,7 @@
 // It does not contain 2 of the same character in adjacent positions (i.e., "aab" violates this condition, but "aba" does not).
 // Given a string password, return true if it is a strong password. Otherwise, return false.
 
-var strongPasswordCheckerII = function(password) {
+var strongPasswordCheckerII = function(password: string) {
     let hasNum = false;
     let hasSpecChar = false;
     
@@ -36,7 +36,7 @@ var strongPasswordCheckerII = function(password) {
     }
 };
 
-const checkAdjacentChar = (password) => {
+const checkAdjacentChar = (password: string) => {
     for (let i = 0, len = password.length; i < len - 1; i++) {
         if (password[i] === password[i + 1]) {
             return true;
